@@ -8,22 +8,7 @@ vec[i] += n;
 return vec;
 }
 
-int main() {
-vector<int> vec = {1, 2, 3, 4, 5};
-int n;
-cout << "Введите целое число: ";
-cin >> n;
-vector<int> result = increaseVector(vec, n);
-for (int i = 0; i < result.size(); i++) {
-cout << result[i] << " ";
-}
-cout << endl;
-return 0;
-}
-
 Тест для функции:
-
-
 
 void testIncreaseVector() {
 std::vector<int> vec = {1, 2, 3, 4, 5};
