@@ -9,14 +9,4 @@ return vec;
 }
 
 Тест для функции:
-
-void testIncreaseVector() {
-std::vector<int> vec = {1, 2, 3, 4, 5};
-int n = 10;
-vector<int> result = increaseVector(vec, n);
-assert(result.size() == vec.size());
-assert(result[0] == 11);
-assert(result[1] == 12);
-assert(result[2] == 13);
-assert(result[3] == 14);
-assert(result[4] == 15);
+ASSERT_EQ(vec, increaseVector(vec));
